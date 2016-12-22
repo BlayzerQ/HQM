@@ -93,6 +93,8 @@ public abstract class QuestTask {
     }
 
     public QuestDataTask getData(String uuid) {
+    	if (id < 0)
+    		return newQuestData();
         QuestData questData = QuestingData.getQuestingData(uuid).getQuestData(parent.getId());
         if (id >= questData.tasks.length) {
             questData.tasks = Arrays.copyOf(questData.tasks, id + 1);

@@ -19,7 +19,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.IBlockAccess;
@@ -27,11 +26,8 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-//import net.minecraft.client.renderer.texture.IIconRegister;
-//import net.minecraft.util.IIcon;
-
-
 public class BlockPortal extends BlockContainer {
+	
     public BlockPortal() {
         super(Material.wood);
         setUnlocalizedName(BlockInfo.QUEST_PORTAL_UNLOCALIZED_NAME);
